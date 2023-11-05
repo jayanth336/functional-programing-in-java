@@ -46,9 +46,10 @@ public class FP02_Exercises {
     }
 
     private static void printSortedFormOfList(List<Integer> numbers) {
+        System.out.println();
         numbers.stream()
                 .sorted()
-                .forEach(System.out::println);
+                .forEach(x -> System.out.print(x + " - ")); //Other way of printing output - without Method Referencing
     }
 
     private static void printDistinctSortedNumbersFromList(List<Integer> numbers) {
